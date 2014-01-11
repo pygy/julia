@@ -111,6 +111,7 @@ gc_disable() = ccall(:jl_gc_disable, Void, ())
 
 bytestring(str::ByteString) = str
 
+identity(x) = x
 identity(x...) = x
 
 function append_any(xs...)
